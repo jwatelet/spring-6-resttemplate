@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class BeerClientImplTest {
+
     @Autowired
     BeerClientImpl beerClient;
 
@@ -87,7 +88,6 @@ class BeerClientImplTest {
 
     @Test
     void listBeerWithAllQueryParams() {
-
         beerClient.listBeers("ALE", BeerStyle.ALE, true, 1, 100);
     }
 
